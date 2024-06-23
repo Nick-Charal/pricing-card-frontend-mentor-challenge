@@ -1,0 +1,88 @@
+#main {
+  display: grid;
+  margin: auto;
+  height: 500px;  
+  width: 600px;
+  box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: serif;
+}
+#topSection {
+  padding: 20px 20px 0px 20px;
+}
+
+#topSection h1 {
+  color: #20B2AA;
+}
+
+#topSection h2 {
+  color: #9ACD32;
+}
+
+#topSection p {
+  color: #696969;
+  margin-bottom: 0px;
+}
+
+#bottomSection {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#leftSection {
+  background-color: #20B2AA;
+  width: 50%;
+  justify-content: center;
+}
+
+#price, #renewal {
+  display: inline-block;
+}
+
+#price {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+#renewal {
+  position: relative;
+  top: -5px;
+  font-size: 0.9rem;
+}
+
+#leftSection button {
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  width: 100%;
+  background-color: #9ACD32;
+}
+
+#leftSection button:hover {
+  cursor: pointer;
+  background-color: #8ab92d;
+  transform: scale(1.02);
+}
+
+#rightSection {
+  background-color: #00CED1;
+  width: 50%;
+}
+
+#rightSection ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#rightSection li {
+  font-size: 0.9rem;
+}
+
+#leftSection, #rightSection {
+  padding: 20px 20px 0px 20px;
+}
