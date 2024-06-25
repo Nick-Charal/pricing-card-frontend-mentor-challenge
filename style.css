@@ -1,15 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 20px;
+}
+
+h1, h2, p{
+  margin: 0px 0px 20px 0px;
+}
+
 #main {
-  display: grid;
   margin: auto;
-  height: 500px;  
-  width: 600px;
+  /*height: 400px;  
+  width: 600px;*/
   box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.5);
   border-radius: 10px;
   overflow: hidden;
   font-family: serif;
 }
+
 #topSection {
-  padding: 20px 20px 0px 20px;
+  padding: 25px 25px 25px 25px;
+  height: 50%;
+  width: 100%;
 }
 
 #topSection h1 {
@@ -22,19 +40,20 @@
 
 #topSection p {
   color: #696969;
-  margin-bottom: 0px;
 }
 
 #bottomSection {
-  display: flex;
-  justify-content: center;
+  height: 60%;
+  width: 100%;
   color: white;
 }
 
 #leftSection {
+  display: inline-block;
   background-color: #20B2AA;
-  width: 50%;
-  justify-content: center;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
 }
 
 #price, #renewal {
@@ -69,8 +88,11 @@
 }
 
 #rightSection {
+  display: inline-block;
   background-color: #00CED1;
-  width: 50%;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
 }
 
 #rightSection ul {
@@ -84,5 +106,16 @@
 }
 
 #leftSection, #rightSection {
-  padding: 20px 20px 0px 20px;
+  padding: 25px;
+}
+
+@media (min-width: 576px) {
+  #leftSection, #rightSection {
+    width: 50%;
+  }
+  
+  #main {
+    height: 400px;
+    width: 550px;
+  }
 }
